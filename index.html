@@ -30,16 +30,24 @@
             <p ng-show="userForm.username.$error.minlength" class="help-block">Username is too short.</p>
             <p ng-show="userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
         </div>
-        
+        <select name="" id="" ng-model="valueSel">
+            <option value="val.val" ng-repeat="val in vals">{{val.name}}</option>
+        </select>
         <!-- EMAIL -->
         <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
             <label>Email</label>
             <input type="email" name="email" class="form-control" ng-model="user.email">
             <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
         </div>
-        
+        <div>
+<select ng-options="vm.val">
+    <option> Select</option>
+<option ng-repeat="t in vm.cl" value="t.id">{{t.name}}</option>
+</select>
+
+        </div>
         <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
-        
+        <button ng-click="cancel()">Cancel</button>
     </form>
   </div>
   <div class="col-sm-6">

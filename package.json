@@ -1,0 +1,16 @@
+{
+  "name": "ngfrom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "devDependencies": {
+    "angular": "1.6.5"},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
